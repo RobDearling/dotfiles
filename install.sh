@@ -7,7 +7,11 @@ touch $HOME/.hushlogin
 sudo apt update
 sudo apt upgrade
 
-# Install ZSH
+# Intsall ZSH
+echo "Installing zsh"
+sudo apt install zsh
+
+# Install Oh My ZSH
 echo 'Installing oh-my-zsh'
 ## Remove any existing config for oh-my-zsh
 rm -rf  $HOME/.oh-my-zsh
