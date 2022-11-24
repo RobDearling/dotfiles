@@ -8,8 +8,8 @@ sudo apt update
 sudo apt upgrade
 
 # Intsall ZSH
-echo "Installing zsh"
-sudo apt install zsh
+echo "Installing zsh, git & htop"
+sudo apt install -y git zsh
 
 # Install Oh My ZSH
 echo 'Installing oh-my-zsh'
@@ -26,7 +26,13 @@ git config --global core.excludesfiles $HOME/.global-gitignore
 rm $HOME/.zshrc
 ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 
+# Setup zlocation
+cd ~/.dotfiles/shell
+chmod +x z.sh
 
-# Fix missing font characters (see https://github.com/robbyrussell/oh-my-zsh/issues/1906)
-cd ~/.oh-my-zsh/themes/
-git checkout d6a36b1 agnoster.zsh-theme
+
+# Install wget
+sudo apt install -y wget
+
+# Install .NET 6
+sudo apt install -y dotnet6 aspnetcore-runtime-6.0

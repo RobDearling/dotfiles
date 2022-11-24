@@ -5,4 +5,4 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="agnoster"
 
 # Hides the username in prompt
-DEFAULT_USER=`whoami`
+DEFAULT_USER="Rob 👨‍🚀"
