@@ -3,6 +3,7 @@
 # Remove the login information on shell startup
 touch $HOME/.hushlogin
 
+
 # Update packages and upgrade
 sudo apt update
 sudo apt upgrade
@@ -17,6 +18,11 @@ echo 'Installing oh-my-zsh'
 rm -rf  $HOME/.oh-my-zsh
 
 curl --location https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+# Remove global gitignore if script has already been ran
+if test -f "$HOME/.global-gitignore"; then
+    rm -rf $HOME/.global-gitignore
+fi
 
 # Setup global gitignore
 ln -s $HOME/.dotfiles/shell/.global-gitignore $HOME/.global-gitignore
