@@ -1,0 +1,9 @@
+# Git
+alias gc ="git checkout"
+alias gcm = "git checkout master"
+alias gm = "git merge"
+alias glog = "alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit""
+
+# List all files colorized in long format
+alias l="ls -laF"
+
