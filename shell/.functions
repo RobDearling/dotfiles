@@ -33,17 +33,3 @@ function commit() {
   git add .
   eval "git commit -am '${commitMessage}'"
 }
-
-function rbmain() {
-  eval "git checkout main"
-  eval "git pull"
-  eval "git checkout -"
-  eval "git rebase main"
-}
-
-function rbmaster() {
-  eval "git checkout master"
-  eval "git pull"
-  eval "git checkout -"
-  eval "git rebase master"
-}
