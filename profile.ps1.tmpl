@@ -1,0 +1,11 @@
+Import-Module posh-git
+
+$GitPromptSettings.DefaultPromptPrefix = 'PS '
+$GitPromptSettings.DefaultPromptAbbreviateHomeDirectory = $true
+
+Set-Alias -Name g -Value git
+Set-Alias -Name gs -Value 'git status'
+Set-Alias -Name ga -Value 'git add'
+Set-Alias -Name gaa 'git add --all'
+Set-Alias -Name k -Value kubectl
+Set-Alias -Name tf -Value terraform
