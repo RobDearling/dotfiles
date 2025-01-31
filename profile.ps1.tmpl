@@ -9,3 +9,11 @@ Set-Alias -Name ga -Value 'git add'
 Set-Alias -Name gaa 'git add --all'
 Set-Alias -Name k -Value kubectl
 Set-Alias -Name tf -Value terraform
+
+
+function AzSubscriptionSet {
+  param(
+    [string]$subscriptionName
+  )
+  az account set --subscription $subscriptionName
+}
