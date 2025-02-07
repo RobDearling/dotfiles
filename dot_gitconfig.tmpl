@@ -1,6 +1,7 @@
 [user]
   name = {{ .name }}
   email = {{ .email }}
+  signingkey = ~/.ssh/id_rsa.ppk
 [core]
   sshCommand = 'C:\\WINDOWS\\System32\\OpenSSH\\ssh.exe'
   editor = code --wait
@@ -18,3 +19,7 @@
   sslVerify = true
 [merge]
   tool = vscode
+[gpg]
+        format = ssh
+[commit]
+        gpgsign = true
