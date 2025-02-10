@@ -17,3 +17,14 @@ function AzSubscriptionSet {
   )
   az account set --subscription $subscriptionName
 }
+
+function Set-WindowTitle {
+    $host.UI.RawUI.WindowTitle = (Get-Location).Path | Split-Path -Leaf
+}
+$OldPrompt = $function:prompt
+
+function prompt {
+    Set-WindowTitle
+    if ($OldPrompt) { & $OldPrompt }
+    return ''
+}
