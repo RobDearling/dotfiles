@@ -19,6 +19,7 @@ source ~/.local/wsl-setup/setup/apps/zellij.sh
 source ~/.local/wsl-setup/setup/apps/terminal.sh
 source ~/.local/wsl-setup/setup/apps/libraries.sh
 source ~/.local/wsl-setup/setup/apps/mise.sh
+source ~/.local/wsl-setup/setup/apps/nvim.sh
 source ~/.local/wsl-setup/setup/configure-git.sh
 
 # Configure Zellij on startup
