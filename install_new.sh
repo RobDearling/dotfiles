@@ -14,10 +14,6 @@ rm -rf ~/.local/wsl-setup
 git clone https://github.com/robdearling/dotfiles ~/.local/wsl-setup >/dev/null
 cd ~/.local/wsl-setup
 
-#TODO: Remove this once the repo is stable
-git checkout wsl-config
-git pull >/dev/null
-
 cd -
 
 source ~/.local/wsl-setup/setup/gum.sh
