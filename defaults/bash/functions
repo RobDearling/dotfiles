@@ -1,0 +1,10 @@
+weather() {
+  city="$1"
+  if [ -z "$city" ]; then
+    echo "Usage: weather <city>"
+    return 1
+  fi
+
+  curl "wttr.in/$city?format=3"
+  return 0
+}

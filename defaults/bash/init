@@ -1,0 +1,8 @@
+# Initialize mise
+eval "$(mise activate bash)"
+
+# Initialize zoxide
+eval "$(zoxide init bash)"
+
+
+

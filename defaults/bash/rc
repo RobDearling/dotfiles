@@ -1,0 +1,5 @@
+source ~/.local/wsl-setup/defaults/bash/shell
+source ~/.local/wsl-setup/defaults/bash/aliases
+source ~/.local/wsl-setup/defaults/bash/functions
+source ~/.local/wsl-setup/defaults/bash/prompt
+source ~/.local/wsl-setup/defaults/bash/init

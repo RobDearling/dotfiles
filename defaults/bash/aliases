@@ -1,0 +1,36 @@
+alias ls='eza -lh --group-directories-first --icons=auto'
+alias lsa='ls -a'
+alias lt='eza --tree --level=2 --long --icons --git'
+alias lta='lt -a'
+alias cd="z"
+
+zd() {
+  if [ $# -eq 0 ]; then
+    builtin cd ~ && return
+  elif [ -d "$1" ]; then
+    builtin cd "$1"
+  else
+    z "$@" && printf " \U000F17A9 " && pwd || echo "Error: Directory not found"
+  fi
+}
+
+# Tooling
+alias g='git'
+alias tf='terraform'
+alias k='kubectl'
+alias lzd='lazydocker'
+alias lzg='lazygit'
+alias d='docker'
+
+# Git aliases
+alias gs='git status'
+alias gcm='git commit -m'
+alias gcam='git commit -am'
+
+# Directory navigation aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+
+
